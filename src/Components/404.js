@@ -8,8 +8,8 @@ class PageNotFoundError extends Component
         return (
             <div>
                 <img alt="404 tunic" src={PageNotFound}/>
-                <h1>404 Page Not Found!</h1>
-                <h2>Looks like you went adventuring a little too far.</h2>
+                <h1>404 Snaily Not Found!</h1>
+                <h2>Go on! Slowly crawl back to where you came from..</h2>
                 <NavLink to="/">
                     Go Home
                 </NavLink>
