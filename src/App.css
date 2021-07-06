@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #FFFFFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,15 +41,16 @@
 }
 
 body {
-  background: #2c2f33;
-  font-family: 'Fira Sans', sans-serif;
-  color: #ffffff;
+  background: #E08827;
+  background-image: url("https://i.imgur.com/5WZqzLt.png");
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
   text-align: center;
 }
 
 
 .icon {
-  background-color: #23272a;
+  background-color: #FFFFFF;
   border-radius: 25%;
   box-shadow: 5px 5px 10px #2c2f33;
 }
@@ -61,13 +62,13 @@ body {
   text-align: justify;
 }
 .button {
-  background-color: #7289da !important;
+  background-color: #5865F2 !important;
   width: 15em;
   color: white !important;
 }
 
 button {
-  background-color: #7289da !important;
+  background-color: #5865F2 !important;
   width: 10em;
 }
 form button {
@@ -78,11 +79,11 @@ form button {
 
 .background {
   margin: 25px !important;
-  /*background-color: #23272a;*/
+  /*background-color: #FFFFFF;*/
 }
 
 .banner {
-  background-color: #23272a;
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
