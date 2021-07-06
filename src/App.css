@@ -92,10 +92,11 @@ form button {
 }
 .form {
   width: 50%;
-  background-color: #000000;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 25px;
+  color: #000000;
   border-radius: 10px;
 }
 
