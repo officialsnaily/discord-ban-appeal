@@ -42,9 +42,6 @@
 
 body {
   background-image: url("https://i.imgur.com/XryBEnd.jpg");
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
   background: #E08827;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
