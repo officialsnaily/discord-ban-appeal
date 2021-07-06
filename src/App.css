@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: #000000;
 }
 
 .App-logo {
@@ -58,6 +59,7 @@ body {
 }
 .avatar, label {
   text-align: justify;
+  color: #000000;
 }
 .button {
   background-color: #5865F2 !important;
@@ -101,4 +103,5 @@ form button {
 
 h1 {
   width: 100%;
+  color: #000000;
 }
