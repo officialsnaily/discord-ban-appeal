@@ -1,3 +1,3 @@
-![Home page](HomePage.png)
+![Snail](Snail.png)
 
 Team Snaily Discord Ban Appeal Webpage
