@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  color: #000000;
 }
 
 .App-logo {
@@ -38,13 +37,13 @@
 }
 .MuiOutlinedInput-input,
 .MuiFormLabel-root {
-  color: white !important;
+  color: black !important;
 }
 
 body {
   background-image: url("https://i.imgur.com/XryBEnd.jpg");
   font-family: 'Roboto', sans-serif;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 
@@ -103,5 +102,5 @@ form button {
 
 h1 {
   width: 100%;
-  color: #000000;
+  color: #ffffff;
 }
