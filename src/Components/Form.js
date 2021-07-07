@@ -52,18 +52,18 @@ class Form extends Component {
          };
          let unbanUrl = window.location.origin + "/.netlify/functions/unban";
         var embed = [{
-            title: "New Ban Appeal Received",
+            title: "New Ban Appeal",
             type: "rich",
             author: {
                 name: this.state.user.username,
                 icon_url: this.state.avatar_url
             },
             description: `**Username**: <@${this.state.user.id}> (${this.state.user.username}#${this.state.user.discriminator})\n` +
-                "**Why were you banned?**\n" + this.state.ban_reason + "\n\n" +
+                "**Where & why were you banned?**\n" + this.state.ban_reason + "\n\n" +
                 "**Why do you feel you should be unbanned?**\n" + this.state.unban_reason + "\n\n" +
-                "**What will you do to avoid being banned in the future?**\n" + this.state.future_behavior + "\n\n " +
+                "**Additional comments:**\n" + this.state.future_behavior + "\n\n " +
                 "**Actions**\n" +
-                `[Approve appeal and unban user](${unbanUrl}?token=${encodeURIComponent(createJwt(unbanInfo))})`,
+                `[Unban this user from Discord](${unbanUrl}?token=${encodeURIComponent(createJwt(unbanInfo))})`,
             timestamp: now.toISOString()
         }];
         axios.post(url, {embeds: embed}).then(() => {
@@ -97,7 +97,7 @@ class Form extends Component {
                     <Grid item xs={12}>
                         <form onSubmit={this.handleSubmit} noValidate>
                             <div>
-                                <InputLabel htmlFor="why-ban">Why were you banned?</InputLabel>
+                                <InputLabel htmlFor="why-ban">Where and why were you banned? (I.e. Discord, SAPDFR, etc.)</InputLabel>
                                 <TextField onChange={this.updateState} variant="outlined" className={"textarea"}
                                            id="why-ban" name="ban_reason" aria-describedby="my-helper-text" fullWidth
                                            multiline rows={4}/>
@@ -106,8 +106,7 @@ class Form extends Component {
                                            id="why-unban" name="unban_reason" aria-describedby="my-helper-text"
                                            fullWidth
                                            multiline rows={4}/>
-                                <InputLabel htmlFor="avoid-ban">What will you do to avoid being banned in the
-                                    future?</InputLabel>
+                                <InputLabel htmlFor="avoid-ban">Do you have anything else to add? (If you have been banned from one of our gameservers please include your in-game / steamname)</InputLabel>
                                 <TextField onChange={this.updateState} variant="outlined" className={"textarea"}
                                            id="avoid-ban" aria-describedby="my-helper-text" name="future_behavior"
                                            fullWidth
