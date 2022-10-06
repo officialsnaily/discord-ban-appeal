@@ -79,7 +79,7 @@ class Form extends Component {
         if (this.state.notBanned) {
             return <Redirect to={{
                 pathname: '/404',
-                state: {errorCode: '403', errorMessage: "It looks like you're not banned."}
+                state: {errorCode: '403', errorMessage: "It seems like you're not banned. Uhh.. awkward!"}
             }}/>;
         }
         return (
