@@ -59,7 +59,7 @@ class Form extends Component {
                 icon_url: this.state.avatar_url
             },
             description: `**Username**: <@${this.state.user.id}> (${this.state.user.username}#${this.state.user.discriminator})\n` +
-                "**Where & why were you banned?**\n" + this.state.ban_reason + "\n\n" +
+                "**Why were you banned?**\n" + this.state.ban_reason + "\n\n" +
                 "**Why do you feel you should be unbanned?**\n" + this.state.unban_reason + "\n\n" +
                 "**Additional comments:**\n" + this.state.future_behavior + "\n\n " +
                 "**Actions**\n" +
@@ -97,7 +97,7 @@ class Form extends Component {
                     <Grid item xs={12}>
                         <form onSubmit={this.handleSubmit} noValidate>
                             <div>
-                                <InputLabel htmlFor="why-ban">Where and why were you banned? (I.e. Discord, NLPDFR, UKPDFR, SnailCAD, etc.)</InputLabel>
+                                <InputLabel htmlFor="why-ban">Why have you been banned?</InputLabel>
                                 <TextField onChange={this.updateState} variant="outlined" className={"textarea"}
                                            id="why-ban" name="ban_reason" aria-describedby="my-helper-text" fullWidth
                                            multiline rows={4}/>
@@ -106,7 +106,7 @@ class Form extends Component {
                                            id="why-unban" name="unban_reason" aria-describedby="my-helper-text"
                                            fullWidth
                                            multiline rows={4}/>
-                                <InputLabel htmlFor="avoid-ban">Do you have anything else to add? (If you have been banned from one of our gameservers please include the name of the gameserver, your in-game / steam name & ban ID)</InputLabel>
+                                <InputLabel htmlFor="avoid-ban">Do you have anything else to add?</InputLabel>
                                 <TextField onChange={this.updateState} variant="outlined" className={"textarea"}
                                            id="avoid-ban" aria-describedby="my-helper-text" name="future_behavior"
                                            fullWidth
